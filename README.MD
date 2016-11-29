@@ -12,6 +12,8 @@
 
 to get list of supported doc flavor run
 
-```shell
+```
+#!shell
+
 javac SupportedFlavors.java && java SupportedFlavors.java
-````
+```

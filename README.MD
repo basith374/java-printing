@@ -1,4 +1,4 @@
-Instructions
+#Instructions
 
 to get list of printers run `javac Printers.java && java Printers`
 

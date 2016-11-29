@@ -10,12 +10,13 @@ class PrintPdf {
 
   public static void main (String [] args) throws Exception
   {
+    // DocFlavor flavor = DocFlavor.INPUT_STREAM.PDF; // not working
     // DocFlavor flavor = DocFlavor.INPUT_STREAM.AUTOSENSE; // not working
     // DocFlavor flavor = DocFlavor.SERVICE_FORMATTED.PAGEABLE; // not working
     DocFlavor flavor = new DocFlavor.INPUT_STREAM("application/octet-stream");
     PrintRequestAttributeSet attr = new HashPrintRequestAttributeSet();
     // attr.add(Sides.DUPLEX); // not working
-    // attr.add(MediaSize.ISO_A4); // not working
+    attr.add(MediaSize.ISO.A4); // not working
     PrintService[] ps = PrintServiceLookup.lookupPrintServices(flavor, attr);
     if (ps.length == 0) {
       throw new IllegalStateException("No Printer found");

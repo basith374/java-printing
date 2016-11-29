@@ -36,7 +36,6 @@ class PrintPdf {
     }
 
     FileInputStream fis = new FileInputStream("./example.pdf");
-    System.out.println("doc flavour applied to printing");
     Doc pdfDoc = new SimpleDoc(fis, flavor, null);
     DocPrintJob printJob = myService.createPrintJob();
     printJob.print(pdfDoc, new HashPrintRequestAttributeSet());

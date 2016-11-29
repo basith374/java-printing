@@ -16,7 +16,7 @@ class PrintPdf {
     DocFlavor flavor = new DocFlavor.INPUT_STREAM("application/octet-stream");
     PrintRequestAttributeSet attr = new HashPrintRequestAttributeSet();
     // attr.add(Sides.DUPLEX); // not working
-    attr.add(MediaSize.ISO.A4); // not working
+    // attr.add(MediaSize.ISO.A4); // not working
     PrintService[] ps = PrintServiceLookup.lookupPrintServices(flavor, attr);
     if (ps.length == 0) {
       throw new IllegalStateException("No Printer found");

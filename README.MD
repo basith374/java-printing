@@ -4,7 +4,7 @@
 
 `javac Printers.java && java Printers`
 
-2) after you get list of printers, change the `label` variable inside PrintPdf.java & SupportedFlavours.java to the name your printer. 
+2) after you get list of printers, change the `label` variable inside `PrintPdf.java` & `SupportedFlavours.java` to the name your printer. 
 
 3) to print the example.pdf file run
 
@@ -12,4 +12,6 @@
 
 to get list of supported doc flavor run
 
-`javac SupportedFlavors.java && java SupportedFlavors.java`
+```shell
+javac SupportedFlavors.java && java SupportedFlavors.java
+````
